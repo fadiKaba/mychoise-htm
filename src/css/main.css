@@ -26,6 +26,7 @@ body {
 }
 
 .mychoise-element .layer .inner-container .menu {
+  cursor: pointer;
   text-align: right;
   font-weight: bold;
 }
@@ -46,6 +47,7 @@ body {
 }
 
 .card .up-arrow-container {
+  cursor: pointer;
   text-align: center;
   margin-top: 10vh;
   width: 100%;

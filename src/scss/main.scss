@@ -25,6 +25,7 @@ body{
         border-radius: 20px;
         .inner-container{
             .menu{
+                cursor: pointer;
                 text-align: right;
                 font-weight: bold;
             }
@@ -48,6 +49,7 @@ body{
     min-height: 55vh;
     // position: relative;
         .up-arrow-container{
+            cursor: pointer;
             text-align: center;
           //  position: sticky;
           margin-top:10vh;

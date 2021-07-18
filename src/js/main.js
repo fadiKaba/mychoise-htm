@@ -44,7 +44,7 @@ function deleteBtnFunction(v, f){
   setTimeout(function(){
     v.parentElement.parentElement.remove(); 
   }, 300)
-
+  
 
 }
 
