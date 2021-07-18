@@ -142,6 +142,7 @@ body {
 }
 
 .items-container .items .items-row .col div img {
+  cursor: pointer;
   width: 100%;
   border-radius: 50%;
 }
