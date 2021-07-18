@@ -41,20 +41,20 @@
                      </div>
                      <div class="items ">
                         <div class="row items-row px-5">
-                            <div class="col px-1 move-left">
+                            <div class="col px-1">
                                 <div class="">
                                     <button class="delete-btn delete-btn-11" id="delete-btn-collapseid1-itemid1-choiceid1" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid1')"><img src="/src/ics/cancel.png" alt=""></button>
                                     <img src="src/imgs/food.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col px-1">
-                                <div>
+                                <div class="">
                                     <button class="delete-btn delete-btn-11" id="delete-btn-collapseid1-itemid1-choiceid2" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid1')"><img src="/src/ics/cancel.png" alt=""></button>
                                     <img src="src/imgs/pizza.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="col px-1">
-                                <div>
+                            <div class="col px-1 ">
+                                <div class="">
                                     <button class="delete-btn delete-btn-11" id="delete-btn-collapseid1-itemid1-choiceid3" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid1')"><img src="/src/ics/cancel.png" alt=""></button>
                                     <img src="src/imgs/eggs.jpg" alt="">
                                 </div>
@@ -80,19 +80,19 @@
                        <div class="row items-row px-5">
                            <div class="col px-1">
                                <div class="">
-                                   <button class="delete-btn delete-btn-12" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
+                                   <button class="delete-btn delete-btn-12" id="delete-btn-collapseid1-itemid12-choiceid1" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
                                    <img src="src/imgs/pizza.jpg" alt="">
                                </div>
                            </div>
                            <div class="col px-1">
                                <div>
-                                   <button class="delete-btn delete-btn-12" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
+                                   <button class="delete-btn delete-btn-12" id="delete-btn-collapseid1-itemid2-choiceid2" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
                                    <img src="src/imgs/food.jpg" alt="">
                                </div>
                            </div>
                            <div class="col px-1">
                                <div>
-                                   <button class="delete-btn delete-btn-12" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
+                                   <button class="delete-btn delete-btn-12" id="delete-btn-collapseid1-itemid2-choiceid3" onclick="deleteBtnFunction(this, 'undo-btn-collapseid1-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
                                    <img src="src/imgs/eggs.jpg" alt="">
                                </div>
                            </div>        
@@ -105,7 +105,7 @@
                 <!-- End item 2 -->
 
                 <div class="up-arrow-container">
-                    <button class="up-arrow-btn" data-bs-toggle="collapse" data-bs-target="#collapse1id">
+                    <button class="up-arrow-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1id1" aria-expanded="false" aria-controls="collapseExample1">
                         <img src="src/ics/upload.png" alt="">
                     </button>
                 </div>
@@ -113,103 +113,126 @@
         </div>
                <!-- End Mychoise static component 1 -->
 
-               <!-- Mychoise static component 2 -->
+            
+                <!-- Mychoise static component 2 -->
 
-               <div class="mychoise-element" style="background-image: url('src/imgs/main_food.jpg')" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1id2" aria-expanded="false" aria-controls="collapseExample2">
-                <div class="layer">
-                    <div class="row h-100 inner-container">
-                        <div class="menu row">
-                           <span >....</span>
-                        </div>                
-                        <div class="row time-date align-items-end">
-                            <div class="col">Offen biss: 23:00</div>
-                            <div class="col">erstellt am 10/6/2021</div>
-                        </div> 
-                    </div>   
-                </div>  
-            </div>
-    
-            <div class="collapse mb-4 mychoice-item-content" id="collapse1id2">
-                <div class="card card-body">
-                    <div class="items-container">
-                         <div class="row items-container-row">
-                             <div class="col-2"><button class="d-none undo"><img src="src/ics/return.png" alt=""></button></div>
-                             <div class="col-8"><span>Erstell am 01.072021</span> </div>
-                             <div class="col-2">
-                                 <span class="bold" id="items-collapse1id-itemsid">....</span>
-                             </div>
-                         </div>
-                         <div class="items">
-                            <div class="row items-row px-5">
-                                <div class="col px-1">
-                                    <div class="">
-                                        <button class="delete-btn"><img src="/src/ics/cancel.png" alt=""></button>
-                                        <img src="src/imgs/food.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col px-1">
-                                    <div>
-                                        <button class="delete-btn"><img src="/src/ics/cancel.png" alt=""></button>
-                                        <img src="src/imgs/food.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col px-1">
-                                    <div>
-                                        <button class="delete-btn"><img src="/src/ics/cancel.png" alt=""></button>
-                                        <img src="src/imgs/food.jpg" alt="">
-                                    </div>
-                                </div>        
-                            </div>  
-                         </div> 
-                         <div id="edit-view-collapseid2-itemid1" class="edit-view">
-                            <span class="d-none">Erstell am 01.072021</span> 
-                         </div>
-                    </div>
+        <div class="mychoise-element" style="background-image: url('src/imgs/main_food.jpg')" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1id2" aria-expanded="false" aria-controls="collapseExample2">
+            <div class="layer">
+                <div class="row h-100 inner-container">
+                    <div class="menu row">
+                       <span >....</span>
+                    </div>                
+                    <div class="row time-date align-items-end">
+                        <div class="col">Offen biss: 23:00</div>
+                        <div class="col">erstellt am 10/6/2021</div>
+                    </div> 
+                </div>   
+            </div>  
+        </div>
 
-                    <div class="items-container" id="collapseid2-itemsid2">
-                        <div class="row items-container-row">
-                            <div class="col-2"><button class="d-none undo"><img src="src/ics/return.png" alt=""></button></div>
-                            <div class="col-8"><span>Erstell am 01.072021</span> </div>
-                            <div class="col-2">
-                                <span class="bold" id="items-collapse1id-itemsid">....</span>
+        <div class="collapse mb-4 mychoice-item-content" id="collapse1id2">
+            <div class="card card-body">
+                 
+                 <!-- item 1 -->
+                <div class="items-container" id="collapseid2-itemsid1">
+                     <div class="row items-container-row">
+                         <div class="col-2"><button class="d-none undo undo-btn-collapseid2-itemid1" onclick="undoBtnFunction(this, 'collapseid2-itemsid1')"><img src="src/ics/return.png" alt=""></button></div>
+                         <div class="col-8"><span>Erstell am 01.072021</span> </div>
+                         <div class="col-2">
+                             <span class="bold" id="items-collapse1id-itemsid" onclick="runEditView('edit-view-collapseid2-itemid1', 'delete-btn-21', 'undo-btn-collapseid2-itemid1')">....</span>
+                         </div>
+                     </div>
+                     <div class="items ">
+                        <div class="row items-row px-5">
+                            <div class="col px-1">
+                                <div class="">
+                                    <button class="delete-btn delete-btn-21" id="delete-btn-collapseid2-itemid1-choiceid1" onclick="deleteBtnFunction(this, 'undo-btn-collapseid2-itemid1')"><img src="/src/ics/cancel.png" alt=""></button>
+                                    <img src="src/imgs/food.jpg" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="items">
-                           <div class="row items-row px-5">
-                               <div class="col px-1">
-                                   <div class="">
-                                       <button class="delete-btn"><img src="/src/ics/cancel.png" alt=""></button>
-                                       <img src="src/imgs/food.jpg" alt="">
-                                   </div>
-                               </div>
-                               <div class="col px-1">
-                                   <div>
-                                       <button class="delete-btn"><img src="/src/ics/cancel.png" alt=""></button>
-                                       <img src="src/imgs/food.jpg" alt="">
-                                   </div>
-                               </div>
-                               <div class="col px-1">
-                                   <div>
-                                       <button class="delete-btn"><img src="/src/ics/cancel.png" alt=""></button>
-                                       <img src="src/imgs/food.jpg" alt="">
-                                   </div>
-                               </div>        
-                           </div>  
-                        </div> 
-                        <div id="edit-view-collapseid2-itemid2" class="edit-view">
-                            <span class="d-none">Erstell am 01.072021</span> 
-                        </div>
-                   </div>
-                    <div class="up-arrow-container">
-                        <button class="up-arrow-btn" data-bs-toggle="collapse" data-bs-target="#collapse1id">
-                            <img src="src/ics/upload.png" alt="">
-                        </button>
-                    </div>
+                            <div class="col px-1">
+                                <div class="">
+                                    <button class="delete-btn delete-btn-21" id="delete-btn-collapseid2-itemid1-choiceid2" onclick="deleteBtnFunction(this, 'undo-btn-collapseid2-itemid1')"><img src="/src/ics/cancel.png" alt=""></button>
+                                    <img src="src/imgs/pizza.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col px-1 ">
+                                <div class="">
+                                    <button class="delete-btn delete-btn-21" id="delete-btn-collapseid2-itemid1-choiceid3" onclick="deleteBtnFunction(this, 'undo-btn-collapseid2-itemid1')"><img src="/src/ics/cancel.png" alt=""></button>
+                                    <img src="src/imgs/eggs.jpg" alt="">
+                                </div>
+                            </div>        
+                        </div>  
+                     </div> 
+                     <div id="edit-view-collapseid2-itemid1" class="edit-view">
+                        <span class="d-none">Erstell am 01.072021</span>  
+                     </div>
                 </div>
-            </div>       
+                <!-- End item 1 -->
+                
+                <!-- item 2 -->
+                <div class="items-container" id="collapseid2-itemsid2">
+                    <div class="row items-container-row">
+                        <div class="col-2"><button class="d-none undo undo-btn-collapseid2-itemid2" onclick="undoBtnFunction(this, 'collapseid2-itemsid2')"><img src="src/ics/return.png" alt=""></button></div>
+                        <div class="col-8"><span>Erstell am 01.072021</span> </div>
+                        <div class="col-2">
+                            <span class="bold" id="items-collapse1id-itemsid" onclick="runEditView('edit-view-collapseid2-itemid2', 'delete-btn-22')">....</span>
+                        </div>
+                    </div>
+                    <div class="items">
+                       <div class="row items-row px-5">
+                           <div class="col px-1">
+                               <div class="">
+                                   <button class="delete-btn delete-btn-22" id="delete-btn-collapseid2-itemid2-choiceid1" onclick="deleteBtnFunction(this, 'undo-btn-collapseid2-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
+                                   <img src="src/imgs/pizza.jpg" alt="">
+                               </div>
+                           </div>
+                           <div class="col px-1">
+                               <div>
+                                   <button class="delete-btn delete-btn-22" id="delete-btn-collapseid2-itemid2-choiceid2" onclick="deleteBtnFunction(this, 'undo-btn-collapseid2-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
+                                   <img src="src/imgs/food.jpg" alt="">
+                               </div>
+                           </div>
+                           <div class="col px-1">
+                               <div>
+                                   <button class="delete-btn delete-btn-22" id="delete-btn-collapseid2-itemid2-choiceid3" onclick="deleteBtnFunction(this, 'undo-btn-collapseid2-itemid2')"><img src="/src/ics/cancel.png" alt=""></button>
+                                   <img src="src/imgs/eggs.jpg" alt="">
+                               </div>
+                           </div>        
+                       </div>  
+                    </div> 
+                    <div id="edit-view-collapseid2-itemid2" class="edit-view">
+                        <span class="d-none">Erstell am 01.072021</span> 
+                    </div>
+               </div>
+                <!-- End item 2 -->
+
+                <div class="up-arrow-container">
+                    <button class="up-arrow-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1id2" aria-expanded="false" aria-controls="collapseExample2">
+                        <img src="src/ics/upload.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+            
     </div>
 
-     <!-- Mychoise static component 2 -->
+     <!-- End Mychoise static component 2 -->
+
+     <!-- Footer -->
+
+        <footer>
+                <div class="inner-footer">
+                    <a href="#"><span class="dot"></span></a>
+                    <a href="#"><span class="dot"></span></a>
+                    <a href="#"><span class="dot dot-small"></span></a>
+                    <a href="#"><span class="dot"></span></a>
+                    <a href="#"><span class="dot"></span></a>
+            </div>
+        </footer>
+
+     <!-- End Footer -->
+     
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -10,7 +10,10 @@ function mainF(){
 
 }
 
+
 function runEditView(id, delBtnId){
+  hideUndoBtn();
+  hideDeleteBtns();
   let editV = document.querySelector('#'+id);
   let deleteBtns = document.querySelectorAll('.'+delBtnId);
   let title = document.querySelector('#' +id + ' span');
@@ -22,7 +25,9 @@ function runEditView(id, delBtnId){
     title.classList.add('d-none');
     hideUndoBtn();
   }else{
-    hideEdirViews('.edit-view');
+    hideEditViews('.edit-view');
+    //document.querySelectorAll('.edit-view span').forEach(el => el.classList.contains('d-none')? '': el.classList.add('d-none'))
+    hideTitle();
     editV.classList.add('height');
     showDeleteBtn(deleteBtns)
     title.classList.remove('d-none');
@@ -31,32 +36,33 @@ function runEditView(id, delBtnId){
 }
 
 function deleteBtnFunction(v, f){
-    document.querySelector('.'+f).classList.remove('d-none');
-    removedItem = v.parentElement.parentElement;
-    v.parentElement.parentElement.classList.add('move-left')
-    console.log(v.getAttribute('id'));
- //$('#'+v.getAttribute('id')).parent().parent().hide('slow', function(){ $('#'+v.getAttribute('id')).parent().parent().hide(); });
+
+  document.querySelector('.'+f).classList.remove('d-none');
+  removedItem = v.parentElement.parentElement;
+  $('#'+v.getAttribute('id')).parent().parent().removeClass('move-down')
+  $('#'+v.getAttribute('id')).parent().parent().addClass('move-top')
+  setTimeout(function(){
+    v.parentElement.parentElement.remove(); 
+  }, 300)
 
 
- //$('#'+v.getAttribute('id')).parent().parent().slideUp("normal", function() { $(this).remove(); } )
-  // v.parentElement.parentElement.remove();  
-  // setInterval(() => {
-  //   $('#'+v.getAttribute('id')).parent().parent().slideUp("normal", function() { $(this).remove(); } )
-  // }, 300);
-  
-
-
-
-
-             
 }
 
+
 function undoBtnFunction(v, id){
-  // document.querySelector('#'+id+ ' .items-row').appendChild(removedItem);
-    $(removedItem).appendTo('#'+id+ ' .items-row').show('slow');
- //$('#'+id+ ' .items-row').appendTo('#'+removedItem.getAttribute('id')).show('slow');
-    removedItem = '';
-    v.classList.add('d-none');
+
+  // console.log(document.querySelector('#'+id+ ' .items-row'))
+  // console.log(removedItem)
+  $(removedItem).appendTo('#'+id+ ' .items-row').show('slow'); 
+  $(removedItem).removeClass('move-top');
+  $(removedItem).addClass('move-down');
+  
+  setTimeout(function(){
+    document.querySelectorAll('.items-row .col').forEach(el => el.classList.remove('move-down'))
+  },300)
+
+  removedItem = '';
+  v.classList.add('d-none');
 }
   
 function hideUndoBtn(){
@@ -70,12 +76,27 @@ function showDeleteBtn(btn){
     btn.forEach(el => el.classList.add('show-x'));
 }
 
-function hideEdirViews(view){
+function hideEditViews(view){
   document.querySelectorAll(view).forEach(el => {
       el.classList.remove('height');
+  })
+}
+
+function hideTitle(){
+  document.querySelectorAll('.edit-view span').forEach(el => 
+    el.classList.contains('d-none')? '': el.classList.add('d-none'))
+}
+
+function hideDeleteBtns(){
+  document.querySelectorAll('.delete-btn').forEach(el => {
+    el.classList.remove('show-x')
   })
 }
 
 
    
 mainF()
+
+
+//------------------------------------------------------------------------
+
